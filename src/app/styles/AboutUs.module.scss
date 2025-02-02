@@ -1,0 +1,68 @@
+.aboutUs {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 40dvh 0 0dvh 0;
+    overflow: hidden;
+
+    h2 {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        font-size: 12rem;
+        font-style: italic;
+        color: white;
+        font-family: "Raleway", sans-serif;
+        white-space: nowrap;
+        overflow: hidden;
+        font-weight: 900;
+        mix-blend-mode: difference;
+    }
+
+    p {
+        font-family: poppins;
+        font-size: 1.5rem;
+        color: grey;
+        padding: 7dvh;
+        text-align: center;
+        font-weight: 600;
+
+        span {
+            color: black;
+        }
+    }
+
+    .containerInfos {
+        height: 40dvh;
+        display: flex;
+        justify-content: center;
+        width: 100dvh;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                font-size: 3rem;
+                color: black;
+                text-align: center;
+                font-weight: 600;
+                padding: 1rem 2rem;
+            }
+
+            .number {
+                font-style: italic;
+                font-size: 6rem;
+                font-family: "Raleway", sans-serif;
+                font-weight: 900;
+            }
+        }
+    }
+}
