@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Hero />
-      {/* <AboutUs />
+      <AboutUs />
       <Slider />
-      <Sponsors /> */}
+      <Sponsors />
     </div>
   );
 }
