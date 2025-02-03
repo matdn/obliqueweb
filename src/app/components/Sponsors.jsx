@@ -9,27 +9,27 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Sponsors() {
     const rowRefs = useRef([]);
 
-    // useEffect(() => {
-    //     if (typeof window !== "undefined") {
-    //         gsap.registerPlugin(ScrollTrigger);
-    //     }
-    //     const speeds = [3, -5, 4]; // Vitesse de déplacement selon le scroll
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            gsap.registerPlugin(ScrollTrigger);
+        }
+        const speeds = [3, -5, 4]; // Vitesse de déplacement selon le scroll
 
-    //     rowRefs.current.forEach((row, index) => {
-    //         const speed = speeds[index];
+        rowRefs.current.forEach((row, index) => {
+            const speed = speeds[index];
 
-    //         gsap.to(row, {
-    //             x: () => (speed > 0 ? -row.offsetWidth : row.offsetWidth),
-    //             ease: 'none',
-    //             scrollTrigger: {
-    //                 trigger: row,
-    //                 start: 'top bottom',
-    //                 end: 'bottom top',
-    //                 scrub: 1,
-    //             },
-    //         });
-    //     });
-    // }, []);
+            gsap.to(row, {
+                x: () => (speed > 0 ? -row.offsetWidth : row.offsetWidth),
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: row,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: 1,
+                },
+            });
+        });
+    }, []);
 
     return (
         <section className={styles.sponsors}>

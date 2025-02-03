@@ -8,29 +8,29 @@ import styles from "../styles/AboutUs.module.scss";
 export default function AboutUs() {
     const textRef = useRef(null);
     const aboutDivRef = useRef(null);
-    // useEffect(() => {
-    //     // Enregistrer le plugin ScrollTrigger
-    //     gsap.registerPlugin(ScrollTrigger);
-    //     if (typeof window !== "undefined") {
-    //         gsap.registerPlugin(ScrollTrigger);
-    //     }
-    //     // Animation du texte
-    //     gsap.fromTo(
-    //         textRef.current,
-    //         { x: "30%" }, // Départ hors écran à gauche
-    //         {
-    //             x: "50%", // Finit hors écran à droite
-    //             ease: "none", // Animation linéaire
-    //             scrollTrigger: {
-    //                 trigger: aboutDivRef.current,
-    //                 start: "center bottom", // Début de l'animation
-    //                 end: "bottom top", // Fin de l'animation
-    //                 scrub: 1, // Synchronisation avec le scroll
-    //             },
-    //         }
-    //     );
+    useEffect(() => {
+        // Enregistrer le plugin ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+        if (typeof window !== "undefined") {
+            gsap.registerPlugin(ScrollTrigger);
+        }
+        // Animation du texte
+        gsap.fromTo(
+            textRef.current,
+            { x: "30%" }, // Départ hors écran à gauche
+            {
+                x: "50%", // Finit hors écran à droite
+                ease: "none", // Animation linéaire
+                scrollTrigger: {
+                    trigger: aboutDivRef.current,
+                    start: "center bottom", // Début de l'animation
+                    end: "bottom top", // Fin de l'animation
+                    scrub: 1, // Synchronisation avec le scroll
+                },
+            }
+        );
 
-    // }, []);
+    }, []);
 
     return (
         <section ref={aboutDivRef} className={styles.aboutUs}>

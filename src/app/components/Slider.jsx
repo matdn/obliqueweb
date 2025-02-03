@@ -14,32 +14,32 @@ export default function Slider() {
         { src: '/Slider/image2.png', label: '2ème édition' },
     ];
 
-    // useEffect(() => {
-    //     let ctx;
-    //     if (typeof window !== "undefined") {
-    //         gsap.registerPlugin(ScrollTrigger);
-    //     }
-    //     if (containerRef.current) {
-    //         ctx = gsap.context(() => {
-    //             gsap.to(containerRef.current, {
-    //                 scrollTrigger: {
-    //                     trigger: sliderRef.current,
-    //                     start: 'top top',
-    //                     end: `+=${500 * images.length}`,
-    //                     scrub: true,
-    //                     pin: true,
-    //                     snap: 1 / (images.length - 1),
-    //                 },
-    //                 xPercent: -(100 * (images.length - 1)), // Déplacement horizontal
-    //                 ease: 'none',
-    //             });
-    //         });
-    //     }
+    useEffect(() => {
+        let ctx;
+        if (typeof window !== "undefined") {
+            gsap.registerPlugin(ScrollTrigger);
+        }
+        if (containerRef.current) {
+            ctx = gsap.context(() => {
+                gsap.to(containerRef.current, {
+                    scrollTrigger: {
+                        trigger: sliderRef.current,
+                        start: 'top top',
+                        end: `+=${500 * images.length}`,
+                        scrub: true,
+                        pin: true,
+                        snap: 1 / (images.length - 1),
+                    },
+                    xPercent: -(100 * (images.length - 1)), // Déplacement horizontal
+                    ease: 'none',
+                });
+            });
+        }
 
-    //     return () => {
-    //         if (ctx) ctx.revert();
-    //     };
-    // }, [images]);
+        return () => {
+            if (ctx) ctx.revert();
+        };
+    }, [images]);
 
     return (
         <div ref={sliderRef} className={styles.slider}>
