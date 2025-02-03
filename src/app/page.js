@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import Hero from "./components/Hero";
 import AboutUs from "./components/AboutUs";
 import Slider from "./components/Slider";
-import Sponsors from "./components/SPonsors";
+import Sponsors from "./components/Sponsors";
 
 export default function Home() {
   return (
