@@ -9,7 +9,7 @@ import Slider from "./components/Slider";
 export default function Home() {
   return (
     <div className={styles.page}>
-      {/* <Hero /> */}
+      <Hero />
       {/* <AboutUs />
       <Slider /> */}
       {/* <Sponsors /> */}
