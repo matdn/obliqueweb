@@ -3,19 +3,18 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
-// import styles from "../styles/Hero.module.scss";
-// import styles from "../styles/Hero.module.scss";
+import styles from "../styles/Hero.module.scss";
 
 export default function Hero() {
     const [isMounted, setIsMounted] = useState(false);
     const imagesRef = useRef([]);
 
-    // useEffect(() => {
-    //     if (typeof window !== "undefined") {
-    //         gsap.registerPlugin(ScrollTrigger);
-    //     }
-    //     setIsMounted(true);
-    // }, []);
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            gsap.registerPlugin(ScrollTrigger);
+        }
+        setIsMounted(true);
+    }, []);
 
     useEffect(() => {
         if (!isMounted || imagesRef.current.length < 5) return;
@@ -47,8 +46,8 @@ export default function Hero() {
     if (!isMounted) return null; // Évite l'hydratation sur un contenu différent
 
     return (
-        <section >
-            <div >
+        <section className={styles.hero}>
+            <div className={styles.container}>
                 <Image
                     src="/Hero/obliqueHero.svg"
                     alt="Logo"
@@ -65,6 +64,7 @@ export default function Hero() {
                         width={400}
                         height={400}
                         ref={(el) => el && (imagesRef.current[index] = el)}
+                        className={`${styles.image} ${styles[`image${index + 1}`]}`}
                     />
                 ))}
             </div>
