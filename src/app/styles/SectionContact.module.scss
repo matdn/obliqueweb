@@ -3,28 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
     text-align: center;
-    background-color: #f8f8f8;
+    gap: 3rem;
 }
 
 .text {
     font-size: 1.5rem;
     color: blue;
     margin-bottom: 2rem;
-}
-
-.contactButton {
-    background-color: blue;
-    color: white;
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
-    border: none;
-    cursor: pointer;
-    transform: rotate(-10deg);
-    transition: transform 0.3s ease;
-
-    &:hover {
-        transform: rotate(0deg);
-    }
 }

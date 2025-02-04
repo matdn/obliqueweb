@@ -1,0 +1,50 @@
+.eventPage {
+    text-align: start;
+    padding: 4rem 7%;
+
+    h1 {
+        font-size: 6rem;
+        margin-bottom: 20px;
+        font-style: italic;
+        color: blue;
+    }
+
+    .image {
+        width: 80%;
+        // max-width: 600px;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .artistsList {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .artistItem {
+        cursor: pointer;
+        text-align: start;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        .artistImage {
+            width: 400px;
+            height: 350px;
+
+            object-fit: cover;
+        }
+    }
+
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "1ère édition",
+        "image": "/Slider/image1.png",
+        "description": "Une première édition inoubliable avec des artistes talentueux et une ambiance incroyable.",
+        "artists": [
+            {
+                "id": 101,
+                "name": "Artiste A",
+                "image": "/artists/bjarki.png",
+                "description": "Artiste A est un musicien talentueux ayant marqué la première édition du festival."
+            },
+            {
+                "id": 102,
+                "name": "Artiste B",
+                "image": "/artists/matha.png",
+                "description": "Artiste B est un DJ renommé qui a enflammé la scène du festival."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "2ème édition",
+        "image": "/Slider/image2.png",
+        "description": "Un deuxième événement marquant avec encore plus d'énergie et de performances.",
+        "artists": [
+            {
+                "id": 103,
+                "name": "Artiste C",
+                "image": "/artists/matha.png",
+                "description": "Artiste C est un compositeur et chanteur reconnu pour ses performances live."
+            },
+            {
+                "id": 104,
+                "name": "Artiste D",
+                "image": "/artists/bjarki.png",
+                "description": "Artiste D a apporté une énergie incroyable avec son set électro explosif."
+            }
+        ]
+    }
+]

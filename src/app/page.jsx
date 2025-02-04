@@ -1,21 +1,21 @@
 "use client";
 
-import Image from "next/image";
-import styles from "./page.module.css";
-import Hero from "./components/Hero";
 import AboutUs from "./components/AboutUs";
-import Slider from "./components/Slider";
-import Sponsors from "./components/Sponsors";
-import SectionContact from "./components/Contact";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import SectionSponsors from "./components/SectionSponsors";
+import Slider from "./components/Slider";
+import styles from "./page.module.css";
+import StickySocials from "./components/StickySocials";
 export default function Home() {
   return (
     <div className={styles.page}>
+      <StickySocials />
       <Hero />
       <AboutUs />
       <Slider />
-      <Sponsors />
-      <SectionContact />
+      <SectionSponsors />
+      {/* <SectionContact /> */}
       <Footer />
     </div>
   );

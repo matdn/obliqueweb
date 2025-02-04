@@ -8,7 +8,7 @@ export default function SectionContact() {
             <p className={styles.text}>
                 our vision is to empower users while making their day-to-day activities more effortless.
             </p>
-            <button className={styles.contactButton}>nous contacter</button>
+
         </section>
     );
 }
