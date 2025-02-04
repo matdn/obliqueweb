@@ -48,7 +48,7 @@ export default function AboutUs() {
             <p><span>Les jeunesses (et non pas la jeunesse) ont déjà montré leur force créatrice dans les mouvements émancipateurs de ces dernières années.</span>
                 Nous aspirons à renforcer cette tendance et avons à cœur de donner leur place à tous types d’artistes, d’universités, et de cursus professionnalisant dans tous les domaines d’étude.</p>
 
-            <div className={styles.containerInfos}>
+            {/* <div className={styles.containerInfos}>
                 <div className={styles.content}>
                     <p className={styles.number}>4</p>
                     <p className={styles.description}>éditions</p>
@@ -65,7 +65,7 @@ export default function AboutUs() {
                     <p className={styles.number}>300+</p>
                     <p className={styles.description}>visiteurs</p>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 }

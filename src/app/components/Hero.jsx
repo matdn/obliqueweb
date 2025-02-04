@@ -42,8 +42,8 @@ export default function Hero() {
                 <Image
                     src="/Hero/obliqueHero.svg"
                     alt="Logo"
-                    width={300} // Adapter la taille
-                    height={150}
+                    width={800} // Adapter la taille
+                    height={500}
                     priority
                     className={styles.logo}
                 />
