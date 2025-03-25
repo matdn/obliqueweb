@@ -1,0 +1,170 @@
+[
+    {
+        "id": 1,
+        "title": "Festival des Arts Urbains",
+        "image": "https://api.biennaledelyon.com/assets/w1920-q70/29129610/2023_cie_dyptik_le_grand_bal_2.jpg",
+        "description": "Un festival dédié à l'expression artistique urbaine, avec du graffiti, du street art et des performances en live.",
+        "artists": [
+            {
+                "id": 101,
+                "name": "Banksy Style",
+                "image": "https://source.unsplash.com/800x600/?graffitiartist",
+                "description": "Un artiste mystérieux spécialisé dans l'art urbain."
+            },
+            {
+                "id": 102,
+                "name": "Shepard Fairey",
+                "image": "https://source.unsplash.com/800x600/?urbanartist",
+                "description": "Créateur du célèbre mouvement Obey."
+            },
+            {
+                "id": 103,
+                "name": "Miss Tic",
+                "image": "https://source.unsplash.com/800x600/?streetartist",
+                "description": "L’une des pionnières du street art en France."
+            },
+            {
+                "id": 104,
+                "name": "Jef Aérosol",
+                "image": "https://source.unsplash.com/800x600/?muralartist",
+                "description": "Un des précurseurs du pochoir moderne."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Nuit des DJs Électro",
+        "image": "/Slider/try1.jpg",
+        "description": "Une nuit électrisante avec les meilleurs DJs internationaux sur scène.",
+        "artists": [
+            {
+                "id": 105,
+                "name": "DJ Snake",
+                "image": "https://source.unsplash.com/800x600/?djsnake",
+                "description": "Un des DJs français les plus célèbres au monde."
+            },
+            {
+                "id": 106,
+                "name": "Charlotte de Witte",
+                "image": "https://source.unsplash.com/800x600/?techno",
+                "description": "Une reine de la techno aux performances énergiques."
+            },
+            {
+                "id": 107,
+                "name": "Carl Cox",
+                "image": "https://source.unsplash.com/800x600/?djmix",
+                "description": "Une légende vivante de la musique électronique."
+            },
+            {
+                "id": 108,
+                "name": "Amelie Lens",
+                "image": "https://source.unsplash.com/800x600/?musicproducer",
+                "description": "L'étoile montante de la scène techno."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Renaissance Peintres Contemporains",
+        "image": "/Slider/try2.jpg",
+        "description": "Un hommage aux peintres contemporains avec des expositions et des performances live.",
+        "artists": [
+            {
+                "id": 109,
+                "name": "Jean-Michel Basquiat Tribute",
+                "image": "https://source.unsplash.com/800x600/?painting",
+                "description": "Un hommage au légendaire artiste américain."
+            },
+            {
+                "id": 110,
+                "name": "Yayoi Kusama",
+                "image": "https://source.unsplash.com/800x600/?abstractart",
+                "description": "Maître des pois et des installations immersives."
+            },
+            {
+                "id": 111,
+                "name": "Takashi Murakami",
+                "image": "https://source.unsplash.com/800x600/?modernart",
+                "description": "Fusion entre la pop culture et l'art contemporain."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Battle de Danse Internationale",
+        "image": "https://images.unsplash.com/photo-1454908027598-28c44b1716c1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmVzdGl2YWx8ZW58MHx8MHx8fDA%3D",
+        "description": "Les meilleurs danseurs du monde s'affrontent dans une compétition acharnée.",
+        "artists": [
+            {
+                "id": 112,
+                "name": "Les Twins",
+                "image": "https://source.unsplash.com/800x600/?dancers",
+                "description": "Un duo légendaire du hip-hop mondial."
+            },
+            {
+                "id": 113,
+                "name": "Popping John",
+                "image": "https://source.unsplash.com/800x600/?breakdancer",
+                "description": "Champion du monde de popping."
+            },
+            {
+                "id": 114,
+                "name": "Salah The Entertainer",
+                "image": "https://source.unsplash.com/800x600/?hiphopdance",
+                "description": "Un artiste du mouvement incroyable."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Semaine du Cirque et Acrobaties",
+        "image": "https://source.unsplash.com/800x600/?circus",
+        "description": "Des spectacles aériens, du jonglage et des performances époustouflantes.",
+        "artists": [
+            {
+                "id": 115,
+                "name": "Cirque du Soleil",
+                "image": "https://source.unsplash.com/800x600/?circusperformer",
+                "description": "Un cirque moderne aux spectacles magiques."
+            },
+            {
+                "id": 116,
+                "name": "Flying Acrobat Team",
+                "image": "https://source.unsplash.com/800x600/?acrobatics",
+                "description": "Une troupe d'acrobates défiant la gravité."
+            },
+            {
+                "id": 117,
+                "name": "Les Colporteurs",
+                "image": "https://source.unsplash.com/800x600/?fireperformer",
+                "description": "Un collectif de funambules et jongleurs talentueux."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Art Digital et NFT Expo",
+        "image": "https://source.unsplash.com/800x600/?digitalart",
+        "description": "Une exploration du futur de l’art numérique et des NFTs.",
+        "artists": [
+            {
+                "id": 118,
+                "name": "Beeple",
+                "image": "https://source.unsplash.com/800x600/?digitalart",
+                "description": "Un pionnier du digital art et des NFTs."
+            },
+            {
+                "id": 119,
+                "name": "Pak",
+                "image": "https://source.unsplash.com/800x600/?nftartist",
+                "description": "L'artiste énigmatique derrière de nombreuses œuvres NFT."
+            },
+            {
+                "id": 120,
+                "name": "XCOPY",
+                "image": "https://source.unsplash.com/800x600/?3dart",
+                "description": "Un des artistes numériques les plus influents."
+            }
+        ]
+    }
+]

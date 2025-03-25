@@ -1,5 +1,5 @@
 .eventPage {
-    text-align: start;
+    text-align: flex-start;
     padding: 4rem 7%;
 
     h1 {
@@ -7,6 +7,10 @@
         margin-bottom: 20px;
         font-style: italic;
         color: blue;
+    }
+
+    img {
+        filter: grayscale(1);
     }
 
     .image {
@@ -35,9 +39,9 @@
         text-align: start;
         transition: transform 0.2s ease-in-out;
 
-        &:hover {
-            transform: scale(1.1);
-        }
+        // &:hover {
+        //     transform: scale(1.1);
+        // }
 
         .artistImage {
             width: 400px;

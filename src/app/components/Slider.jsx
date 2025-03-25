@@ -15,46 +15,52 @@ export default function Slider() {
     const router = useRouter();
 
     useEffect(() => {
-        fetch("/data/events.json")
-            .then((res) => res.json())
-            .then((data) => {
-                setEvents(data);
-                console.log("Données chargées :", data);
-            });
+        async function fetchEvents() {
+            try {
+                const res = await fetch("/data/festival_data.json");
+                const data = await res.json();
+
+                // Générer un slug à partir du titre pour la navigation
+                const formattedEvents = data.map((event) => ({
+                    ...event,
+                    slug: event.title
+                        .toLowerCase()
+                        .normalize("NFD")
+                        .replace(/[\u0300-\u036f]/g, "") // remove accents
+                        .replace(/\s+/g, "-"), // replace spaces with dashes
+                }));
+
+                setEvents(formattedEvents);
+                console.log("Données JSON locales chargées :", formattedEvents);
+            } catch (error) {
+                console.error("Erreur lors du chargement des événements :", error);
+            }
+        }
+
+        fetchEvents();
     }, []);
 
     useEffect(() => {
         if (!containerRef.current || events.length === 0) return;
 
-        let ctx;
-        if (typeof window !== "undefined") {
-            gsap.registerPlugin(ScrollTrigger);
-        }
-
-        ctx = gsap.context(() => {
-            gsap.to(containerRef.current, {
-                xPercent: -(100 * (events.length - 1)),
-                ease: "none",
-                scrollTrigger: {
-                    trigger: sliderRef.current,
-                    start: "top top",
-                    end: `+=${window.innerWidth * (events.length - 1)}`,
-                    scrub: true,
-                    pin: true,
-                    anticipatePin: 1,
-                    snap: {
-                        snapTo: 1 / (events.length - 1),
-                        duration: { min: 0.2, max: 0.6 },
-                        delay: 0.1,
-                    },
+        gsap.to(containerRef.current, {
+            xPercent: -(100 * (events.length - 1)),
+            ease: "none",
+            scrollTrigger: {
+                trigger: sliderRef.current,
+                start: "top top",
+                end: `+=${window.innerWidth * (events.length - 1)}`,
+                scrub: true,
+                pin: true,
+                anticipatePin: 1,
+                snap: {
+                    snapTo: 1 / (events.length - 1),
+                    duration: { min: 0.2, max: 0.6 },
+                    delay: 0.1,
                 },
-            });
+            },
         });
-
-        return () => {
-            if (ctx) ctx.revert();
-        };
-    }, [events]); // Exécuter GSAP uniquement quand `events` est chargé
+    }, [events]);
 
     return (
         <div className={styles.sliderWrapper}>
@@ -64,7 +70,7 @@ export default function Slider() {
                         <div
                             key={event.id}
                             className={styles.slide}
-                            onClick={() => router.push(`/event/${event.id}`)}
+                            onClick={() => router.push(`/event/${event.slug}`)}
                         >
                             <img src={event.image} alt={event.title} />
                             <div className={styles.label}>{event.title}</div>
